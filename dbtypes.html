@@ -1,0 +1,1666 @@
+<!--
+    artifact generator: C:\My\wizzi\stfnbssl\wizzi.plugins\packages\wizzi.plugin.html\lib\artifacts\html\document\gen\main.js
+    package: @wizzi/plugin.html@0.8.10
+    primary source IttfDocument: C:\My\wizzi\stfnbssl\lavori\logbot-modeling\packages\stage-3\.wizzi\docs\strapi\dbtypes.html.ittf
+    utc time: Fri, 29 Nov 2024 07:10:38 GMT
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generatedFromIttf" content="C:\My\wizzi\stfnbssl\lavori\logbot-modeling\packages\stage-3\.wizzi\docs\strapi\dbtypes.html.ittf" />
+    <meta name="contextModel_1" content />
+    <title>Gestione Asset - Strapi content types</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            line-height: 1.4;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            -webkit-border-radius: 8px;
+            -khtml-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #0078D4;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .note, .todo {
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #0078D4;
+            margin-bottom: 20px;
+        }
+        .todo {
+            border-left-color: #ff9900;
+        }
+        .access-rules {
+            background: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #0078D4;
+            margin-bottom: 20px;
+        }
+        .toc {
+            margin-bottom: 40px;
+            background: #f2f2f2;
+            padding: 15px;
+            -webkit-border-radius: 8px;
+            -khtml-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+        }
+        .toc a {
+            color: #0078D4;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .toc a:hover {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+        @keyframes blink {
+            blink 0% {
+                fill: #34d8e6;
+            }
+            blink 50% {
+                fill: #ffcccb;
+            }
+            blink 100% {
+                fill: #34d8e6;
+            }
+        }
+        .blinking {
+            -webkit-animation: blink 1s infinite;
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gestione Asset - Strapi content types</h1>
+    </header>
+</body>
+<div class="container">
+    <div id="toc" class="toc">
+        <h2>Table of Contents</h2>
+        <a href="#manufacturer">contentType: Manufacturer</a>
+        <a href="#gatewaymodel">contentType: GatewayModel</a>
+        <a href="#devicemodel">contentType: DeviceModel</a>
+        <a href="#plant">contentType: Plant</a>
+        <a href="#gateway">contentType: Gateway</a>
+        <a href="#device">contentType: Device</a>
+        <a href="#transform">contentType: Transform</a>
+    </div>
+    <div id="manufacturer" class="section">
+        <h2>contentType: Manufacturer</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Produttori di device. ContentType con solo id e nome del produttore per una gestione ordinata del manufacturerId sui modelli.</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            Questo contentType è di `sistema` e modificabile solo da Logbot.</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome del produttore.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>deviceModels</td>
+                    <td>one-to-many</td>
+                    <td>DeviceModel</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Modelli di device forniti dal produttore.</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="gatewaymodel" class="section">
+        <h2>contentType: GatewayModel</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Modello di gateway.</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            Un modello di gateway è accessibile (CRUD) al groupId proprietario e a tutti i groupId appartenenti allo stesso tenant del groupId proprietario. (Verificare con Alessio).</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome del modello di gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Univoco nell'ambito del tenant (Verificare con Alessio). Il tenant deve essere reperito dal GroupId. E' da verificare in corso d'opera se, per ragioni di prestazione, non convenga usare anche un campo tenantId.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Descrizione del modello di gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Opzionale (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Gruppo proprietario del modello di gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' chiave esterna ma la tabella `Groups` è in `Gestione gruppi` non in Strapi. La relazione e i relativi constraints debbono essere gestiti da API e Frontend. Consente di ricavare il tenantId (orgId|organizationId|OemId|manufacturerId).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadataSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSONSchema dei metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configuration</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente la configurazione del gateway modellato (per ora tag dinamici e script). Confluirà dentro il JSON della configurazione IoT (`gateway.ingestionConfig`) dei gateways a cui è stato connesso. Il JSONSchema dell'attuale `configuration` del gateway è in <a href="./jsontypes.html#gateway_configuration">gateway configuration</a>.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configurationSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente il JSONSchema della configurazione del device modellato.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>applications</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON NULL per ora.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>deviceModels</td>
+                    <td>one-to-many</td>
+                    <td>DeviceModel</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Modelli di device che condividono dynamic tags e script definiti nel modello del gateway.</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="devicemodel" class="section">
+        <h2>contentType: DeviceModel</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Modello di device. Può essere fornito da un produttore di device (`manufacturer`) o creato da un utente. I modelli dei produttori inizialmente saranno inseriti da Logbot.</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            Un modello di un produttore è accessibile, in sola lettura, a tutti. Un modello utente è accessibile (CRUD) al groupId proprietario e a tutti i groupId appartenenti allo stesso tenant del groupId proprietario. (Verificare con Alessio).</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome del modello di device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Univoco nell'ambito del tenant (Verificare con Alessio). Il tenant deve essere reperito dal GroupId. E' da verificare in corso d'opera se, per ragioni di prestazione, non convenga usare anche un campo tenantId.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Versione del modello di device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Campo descrittivo scelto dall'utente (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Descrizione del modello di device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Opzionale (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Gruppo proprietario del modello di device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' opzionale. Un deviceModel può essere creato da un utento o fornito da un produttore. Il groupId è valorizzato solo nel caso di modello utente. E' chiave esterna ma la tabella `Groups` è in `Gestione gruppi` non in Strapi. La relazione e i relativi constraints debbono essere gestiti da API e Frontend. Consente di ricavare il tenantId (orgId|organizationId|OemId|manufacturerId).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>protocol</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Protocollo del device.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                        <div>
+                            <b>enum</b>
+                            <span>&nbsp;
+                                <span>"s7"</span>
+                                <span>"modbustcp"</span>
+                                <span>"modbusrtu"</span>
+                                <span>"apqua"</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configuration</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente la configurazione del device modellato (metriche). Confluirà dentro il JSON della configurazione IoT (`gateway.ingestionConfig`) dei devices a cui è stato connesso. Il JSONSchema dell'attuale `configuration` del device è in <a href="./jsontypes.html#device_connectionconfiguration_s7_protocol">connection configuration</a> per il protocollo s7, a seguire gli altri protocolli.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configurationSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente il JSONSchema della configurazione del device modellato.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadataSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSONSchema dei metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>tags</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON per usi futuri. Senza JSONschema per ora.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>manufacturer</td>
+                    <td>many-to-one</td>
+                    <td>Manufacturer</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                        <div>
+                            <b></b>
+                            <span>Reference al produttore di device (`manufacturer`).</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' opzionale. Il manufacturer è valorizzato solo nel caso di modello fornito dal produttore.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>gatewayModel</td>
+                    <td>many-to-one</td>
+                    <td>GatewayModel</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                        <div>
+                            <b></b>
+                            <span>Reference al modello di gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' opzionale. Il gatewayModel può essere valorizzato solo nel caso di modello utente e quando le metriche del modello di device necessitano di fare riferimento a dynamic tags e script definiti nel modello del gateway.</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="plant" class="section">
+        <h2>contentType: Plant</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Impianto fisico contenente gateways e devices fisici (Assets).</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            L'impianto è accessibile (CRUD) al groupId proprietario e ai groupId esplicitamente autorizzati dal proprietario. I permessi a groupId per accesso a plantId sono creati in `Gestione gruppi` (Verificare con Alessio).</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome dell'impianto.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Univoco nell'ambito del tenant (Verificare con Alessio). Il tenant deve essere reperito dal GroupId. E' da verificare in corso d'opera se, per ragioni di prestazione, non convenga usare anche un campo tenantId.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>address</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Indirizzo dell'impianto.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Descrizione dell'impianto.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Opzionale (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Gruppo proprietario dell'impianto.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' chiave esterna ma la tabella `Groups` è in `Gestione gruppi` non in Strapi. La relazione e i relativi constraints debbono essere gestiti da API e Frontend. Consente di ricavare il tenantId (orgId|organizationId|OemId|manufacturerId).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>tags</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Tag statici relativi all'impianto. Opzionale. Confluiranno dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dei tags è in <a href="./jsontypes.html#tags">tags</a></span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadataSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSONSchema dei metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>gateways</td>
+                    <td>one-to-many</td>
+                    <td>Gateway</td>
+                    <td></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="gateway" class="section">
+        <h2>contentType: Gateway</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Gateway fisico appartenente ad un impianto e contenente devices fisici. Deve poter essere creato senza l'impostazione del plantId di appartenenza. L'attach ad un plantId è una operazione che deve poter essere eseguita o subito o anche successivamente.</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            Il gateway è accessibile (CRUD) al groupId proprietario e, quando non connesso a un plantId, a tutti i groupId appartenenti allo stesso tenant del groupId proprietario. Quando invece è connesso ad un plantId è accessibile (CRUD) ai gruppi che hanno il permesso di accedere all'impianto (Verificare con Alessio/Federico).</div>
+        <div class="todo">
+            <strong>TODO:</strong>
+            Verificare con Alessio dove sono collocati le attuali proprietà `gw_id` e `iot_xid` di `ingestionConfig`.</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome del gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Univoco nell'ambito del tenant (Verificare con Alessio). Il tenant deve essere reperito dal GroupId. Verificare con Alessio se, per ragioni di prestazione, non convenga usare anche un campo tenantId.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Descrizione del gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Opzionale (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Gruppo proprietario del gateway.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' chiave esterna ma la tabella `Groups` è in `Gestione gruppi` non in Strapi. La relazione e i relativi constraints debbono essere gestiti da API e Frontend. Consente di ricavare il tenantId (orgId|organizationId|OemId|manufacturerId).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>orderCode</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>deviceVersion</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>serialCode</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>balenaId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Id del backend dati Logbot/Balena.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>`Durante la creazione del Gateway nel front-end, si deve inserire il token ??? ed eseguire le seguenti verifiche: controllare se esiste, controllare se non è di altri e associarlo, poi mettere l’ID nel campo balenaId`. Verificare con Alessio/Federico se possa essere associato in un secondo momento come il plantId; in questo caso in un control panel dovrebbe essere segnalato che la definizione del gateway è incompleta e la generazione del JSON della configurazione IoT non possibile.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Status del gateway.</span>
+                        </div>
+                        <div>
+                            <b>rule: </b>
+                            <span>Solo i gateway con status `activated` possono produrre il JSON della configurazione IoT (`gateway.ingestionConfig`).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                        <div>
+                            <b>enum</b>
+                            <span>&nbsp;
+                                <span>"activated"</span>
+                                <span>"deactivated"</span>
+                                <span>"inventory"</span>
+                                <span>"retired"</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>tags</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Tag statici relativi al gateway fisico. Opzionale. Confluiranno dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dei tags è in <a href="./jsontypes.html#tags">tags</a>.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configuration</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente la configurazione del gateway (per ora batching, tag dinamici e scripts). Confluirà dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dell'attuale `configuration` del gateway è in <a href="./jsontypes.html#gateway_configuration">gateway configuration</a></span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>L'attributo è opzionale (in Strapi) perché se NULL, la `configuration` da utilizzare è quella del correlato `gatewayModel`, altrimenti se il JSON è vuoto, ovvero contiene `{}` senza nessuna proprietà, allora non si applica nessuna configurazione. Quindi deve essere verificata una delle tre: 1) NULL, 2) `{}`, 3) `gatewayModel` impostato.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadataSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSONSchema dei metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>ingestionConfig</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON della configurazione IoT. Il JSON può essere generato con una call all'endpoint Strapi `___`. Nel frontend ogni gateway fisico avrà un pulsante per generare la `ingestionConfig`.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>gatewayModel</td>
+                    <td>many-to-one</td>
+                    <td>GatewayModel</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>plant</td>
+                    <td>many-to-one</td>
+                    <td>Plant</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>devices</td>
+                    <td>one-to-many</td>
+                    <td>Device</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Devices fisici collegati al gateway.</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="device" class="section">
+        <h2>contentType: Device</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome del device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Univoco nell'ambito del tenant (Verificare con Alessio). Il tenant deve essere reperito dal GroupId. Verificare con Alessio se, per ragioni di prestazione, non convenga usare anche un campo tenantId.</span>
+                        </div>
+                        <div>
+                            <b>todo: </b>
+                            <span>Verificare con Alessio dove è collocata l'attuale proprietà `plc_id` di `ingestionConfig`.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>description</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Descrizione del device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Opzionale (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>groupId</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Gruppo proprietario del device.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' chiave esterna ma la tabella `Groups` è in `Gestione gruppi` non in Strapi. La relazione e i relativi constraints debbono essere gestiti da API e Frontend. Consente di ricavare il tenantId (orgId|organizationId|OemId|manufacturerId).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>orderCode</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>deviceVersion</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>serialCode</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>...</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>Required (Verificare con Alessio).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>status</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Status del device.</span>
+                        </div>
+                        <div>
+                            <b>rule: </b>
+                            <span>Solo i device con status `activated` possono produrre il JSON della configurazione IoT (`gateway.ingestionConfig`).</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                        <div>
+                            <b>enum</b>
+                            <span>&nbsp;
+                                <span>"activated"</span>
+                                <span>"deactivated"</span>
+                                <span>"inventory"</span>
+                                <span>"retired"</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>tags</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Tag statici relativi al device fisico. Opzionale. Confluiranno dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dei tags è in <a href="./jsontypes.html#tags">tags</a>.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>protocol</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Protocollo del device.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                        <div>
+                            <b>enum</b>
+                            <span>&nbsp;
+                                <span>"s7"</span>
+                                <span>"modbustcp"</span>
+                                <span>"modbusrtu"</span>
+                                <span>"apqua"</span>
+                            </span>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>connectionConfiguration</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente le proprietà di connessione della configurazione del device. Le proprietà di connessione sono specifiche del device fisico e non possono essere collocate nel deviceModel. Confluirà dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dell'attuale `connectionConfiguration` del device è in <a href="./jsontypes.html#device_connectionconfiguration_s7_protocol">connection configuration</a> per il protocollo s7, a seguire gli altri protocolli.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>configuration</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSON contenente la configurazione del device (metriche). Confluirà dentro il JSON della configurazione IoT (`gateway.ingestionConfig`). Il JSONSchema dell'attuale `configuration` del device è in <a href="./jsontypes.html#device_configuration_s7_protocol">device configuration</a> per il protocollo s7, a seguire gli altri protocolli.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>L'attributo è opzionale (in Strapi) perché se NULL, la `configuration` da utilizzare è quella del correlato `deviceModel`, altrimenti se il JSON è vuoto, ovvero contiene `{}` senza nessuna proprietà, allora non si applica nessuna configurazione. Quindi deve essere verificata una delle tre: 1) NULL, 2) `{}`, 3) `deviceModel` impostato.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadata</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>metadataSchema</td>
+                    <td>json</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>JSONSchema dei metadati che in futuro potranno essere creati dall'utente.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+            </thead>
+        </table>
+        <h3>Relations:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Cardinality</th>
+                    <th>Target</th>
+                    <th>Description / constraints</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr></tr>
+                <tr>
+                    <td>deviceModel</td>
+                    <td>many-to-one</td>
+                    <td>DeviceModel</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                        <div>
+                            <b></b>
+                            <span>Reference al modello di device da utilizzare quando l'attributo `configuration` è NULL.</span>
+                        </div>
+                        <div>
+                            <b>rule: </b>
+                            <span>Segnalare nel pannello di controllo se un device ha sia `configuration` che `deviceModel` impostati. (Verificare con Alessio, in alternativa porre il constraint che solo uno dei due possa essere impostato).</span>
+                        </div>
+                    </td>
+                </tr>
+                <tr></tr>
+                <tr>
+                    <td>gateway</td>
+                    <td>many-to-one</td>
+                    <td>Gateway</td>
+                    <td>
+                        <div>
+                            <b>optional</b>
+                        </div>
+                        <div>
+                            <b></b>
+                            <span>Reference al gateway di appartenenza.</span>
+                        </div>
+                        <div>
+                            <b>constraint: </b>
+                            <span>E' opzionale. Opzionale nel senso che un device deve poter essere creato senza l'impostazione del gatewayId di appartenenza. L'attach ad un gatewayId è una operazione che deve poter essere eseguita o subito o anche successivamente.</span>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div id="transform" class="section">
+        <h2>contentType: Transform</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+        <p>
+            <strong>Description:</strong>
+            Modelli di trasformazione per la produzione di documenti JSON a partire da oggetti dei contentTypes ed altro reperito via API. Al momento contiene le trasformazioni `jsonata` per produrre le `ingestionConfig` e i `commandConfig`.</p>
+        <div class="access-rules">
+            <strong>Access Rules:</strong>
+            Questo contentType è di `sistema` e modificabile solo da Logbot.</div>
+        <div class="todo">
+            <strong>TODO:</strong>
+            Vedere con Alessio come gestire le versioni delle trasformazioni.</div>
+        <h3>Columns:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Type</th>
+                    <th>Description</th>
+                    <th>Constraints</th>
+                </tr>
+                <tr>
+                    <td>id</td>
+                    <td>integer</td>
+                    <td>
+                        <span>Chiave primaria autogenerata da Strapi</span>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>version</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Versione della trasformazione</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>name</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Nome della trasformazione</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>kind</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Tipo della trasformazione. Ad esempio: `jsonata`.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>value</td>
+                    <td>string</td>
+                    <td>
+                        <div>
+                            <b></b>
+                            <span>Istruzioni per eseguire la trasformazione. Il codice di una trasformazione `jsonata ` è in formato testo.</span>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <b>required</b>
+                        </div>
+                    </td>
+                </tr>
+            </thead>
+        </table>
+    </div>
+</div>
+
+</html>

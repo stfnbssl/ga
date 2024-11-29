@@ -1,0 +1,1670 @@
+<!--
+    artifact generator: C:\My\wizzi\stfnbssl\wizzi.plugins\packages\wizzi.plugin.html\lib\artifacts\html\document\gen\main.js
+    package: @wizzi/plugin.html@0.8.10
+    primary source IttfDocument: C:\My\wizzi\stfnbssl\lavori\logbot-modeling\packages\stage-3\.wizzi\docs\strapi\jsontypes.html.ittf
+    utc time: Fri, 29 Nov 2024 07:10:38 GMT
+-->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generatedFromIttf" content="C:\My\wizzi\stfnbssl\lavori\logbot-modeling\packages\stage-3\.wizzi\docs\strapi\jsontypes.html.ittf" />
+    <meta name="contextModel_1" content />
+    <title>Gestione Asset - JSON schemas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 0.9em;
+            line-height: 1.4;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0 20px;
+        }
+        header {
+            background-color: #0078D4;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            -webkit-border-radius: 8px;
+            -khtml-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+            -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            -o-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #0078D4;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 4px;
+        }
+        th {
+            background-color: #f2f2f2;
+            text-align: left;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .note, .todo {
+            background: #f8f8f8;
+            padding: 10px;
+            border-left: 4px solid #0078D4;
+            margin-bottom: 20px;
+        }
+        .todo {
+            border-left-color: #ff9900;
+        }
+        .access-rules {
+            background: #e8f4f8;
+            padding: 10px;
+            border-left: 4px solid #0078D4;
+            margin-bottom: 20px;
+        }
+        .toc {
+            margin-bottom: 40px;
+            background: #f2f2f2;
+            padding: 15px;
+            -webkit-border-radius: 8px;
+            -khtml-border-radius: 8px;
+            -moz-border-radius: 8px;
+            -o-border-radius: 8px;
+            border-radius: 8px;
+        }
+        .toc a {
+            color: #0078D4;
+            -webkit-text-decoration: none;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+        .toc a:hover {
+            -webkit-text-decoration: underline;
+            text-decoration: underline;
+        }
+        @keyframes blink {
+            blink 0% {
+                fill: #34d8e6;
+            }
+            blink 50% {
+                fill: #ffcccb;
+            }
+            blink 100% {
+                fill: #34d8e6;
+            }
+        }
+        .blinking {
+            -webkit-animation: blink 1s infinite;
+            animation: blink 1s infinite;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Gestione Asset - JSON schemas</h1>
+    </header>
+</body>
+<div class="container">
+    <div id="toc" class="toc">
+        <h2>Table of Contents</h2>
+        <a href="#tags">json type: Tags</a>
+        <a href="#gateway_configuration">json type: Gateway_Configuration</a>
+        <a href="#device_model_configuration_s7_protocol">json type: Device_Model_Configuration_S7_Protocol</a>
+        <a href="#device_connectionconfiguration_s7_protocol">json type: Device_ConnectionConfiguration_S7_Protocol</a>
+        <a href="#device_configuration_s7_protocol">json type: Device_Configuration_S7_Protocol</a>
+        <a href="#device_model_configuration_modbustcp_protocol">json type: Device_Model_Configuration_Modbustcp_Protocol</a>
+        <a href="#device_connectionconfiguration_modbustcp_protocol">json type: Device_ConnectionConfiguration_Modbustcp_Protocol</a>
+        <a href="#device_configuration_modbustcp_protocol">json type: Device_Configuration_Modbustcp_Protocol</a>
+        <a href="#device_model_configuration_opcua_protocol">json type: Device_Model_Configuration_Opcua_Protocol</a>
+        <a href="#device_connectionconfiguration_opcua_protocol">json type: Device_ConnectionConfiguration_Opcua_Protocol</a>
+        <a href="#device_configuration_opcua_protocol">json type: Device_Configuration_Opcua_Protocol</a>
+        <a href="#device_model_configuration_modbusrtu_protocol">json type: Device_Model_Configuration_Modbusrtu_Protocol</a>
+        <a href="#device_connectionconfiguration_modbusrtu_protocol">json type: Device_ConnectionConfiguration_Modbusrtu_Protocol</a>
+        <a href="#device_configuration_modbusrtu_protocol">json type: Device_Configuration_Modbusrtu_Protocol</a>
+    </div>
+    <div id="tags" class="section">
+        <h2>json schema: Tags</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "tags": {
+    "type": "object",
+    "properties": {
+      "static": {
+        "type": "array",
+        "items": {
+          "type": "object",
+          "properties": {
+            "key": {
+              "type": "string",
+              "required": true,
+              "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+            },
+            "value": {
+              "type": "string",
+              "required": true,
+              "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+            }
+          }
+        }
+      }
+    }
+  }
+}</pre>
+    <div id="gateway_configuration" class="section">
+        <h2>json schema: Gateway_Configuration</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "batching": {
+    "type": "object",
+    "properties": {
+      "maxSize": {
+        "type": "integer",
+        "minimum": 0,
+        "maximum": 1000,
+        "description": "0 means no batching",
+        "examples": [
+          0,
+          100,
+          60
+        ]
+      },
+      "period": {
+        "type": "integer",
+        "minimum": 0,
+        "description": "batching period in seconds, 0 means disabled",
+        "examples": [
+          0,
+          10,
+          20,
+          60
+        ]
+      }
+    },
+    "additionalItems": false
+  },
+  "dynamic_tags": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "tag_xid": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_-]{3,10}$",
+          "description": "id of the tag"
+        },
+        "default_value": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_.-]{1,10}$",
+          "description": "default value of the tag (will be used in case of failed fetching or not allowed value)"
+        },
+        "description": {
+          "type": "string"
+        },
+        "ref_device_xid": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "description": "id of the reference device"
+        },
+        "ref_metric_name": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "description": "name of the reference metric inside the device"
+        }
+      }
+    },
+    "uniqueItems": true
+  },
+  "scripts": {
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "script_xid": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_-]{3,20}$"
+        },
+        "script_type": {
+          "type": "string",
+          "required": true,
+          "pattern": "^[a-zA-Z0-9_. -]{3,20}$"
+        },
+        "script_description": {
+          "type": "string"
+        },
+        "script_timeout": {
+          "type": "integer",
+          "required": true,
+          "minimum": 0,
+          "maximum": 1000
+        },
+        "script_content": {
+          "type": "string",
+          "required": true,
+          "description": "The whole return object must contains currentSent: any, fire: boolean, error: boolean. **Available variables: lastSent, currentRead**",
+          "maxLength": 1000,
+          "examples": [
+            " ({\"currentSent\": currentRead, \"fire\": currentRead !== lastSent , \"error\": false})",
+            " ({\"currentSent\": -currentRead, \"fire\": true , \"error\": false})",
+            " ({\"currentSent\": lastSent?-lastSent:currentRead, \"fire\": true , \"error\": false})",
+            " ({\"currentSent\": currentRead, \"fire\": true, \"error\": true})"
+          ]
+        }
+      }
+    },
+    "uniqueItems": true
+  }
+}</pre>
+    <div id="device_model_configuration_s7_protocol" class="section">
+        <h2>json schema: Device_Model_Configuration_S7_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "nota": [
+      "Le proprietà sono le stesse del Device_Configuration_S7_Protocol eccetto",
+      "che per i modelli del produttore dove non vanno inserite",
+      "`script` (reference al gateway model) e",
+      "`tags.dynamic` (idem)"
+    ]
+  }
+}</pre>
+    <div id="device_connectionconfiguration_s7_protocol" class="section">
+        <h2>json schema: Device_ConnectionConfiguration_S7_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "connection": {
+    "type": "object",
+    "properties": [
+      {
+        "name": "host",
+        "type": "string",
+        "title": "host"
+      },
+      {
+        "name": "port",
+        "type": "number",
+        "title": "port",
+        "description": " (minimum: 0,maximum: 65535,minimum: 0,maximum: 65535,minimum: 0,maximum: 65535) ",
+        "minimum": 0,
+        "maximum": 65535
+      },
+      {
+        "name": "slot",
+        "type": "number",
+        "title": "slot",
+        "description": " (minimum: 0) ",
+        "minimum": 0
+      },
+      {
+        "name": "rack",
+        "type": "number",
+        "title": "rack",
+        "description": " (minimum: 0) ",
+        "minimum": 0
+      }
+    ]
+  }
+}</pre>
+    <div id="device_configuration_s7_protocol" class="section">
+        <h2>json schema: Device_Configuration_S7_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "title": "name",
+          "description": "metric name"
+        },
+        "interval": {
+          "type": "integer",
+          "title": "interval",
+          "description": "interval in ms (minimum: 10000,maximum: 10000000000) ",
+          "minimum": 10000,
+          "maximum": 10000000000
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "optional description for metric (maxLength: 89) ",
+          "maxLength": 89
+        },
+        "topic": {
+          "type": "string",
+          "title": "topic",
+          "description": "topic to publish to",
+          "enum": [
+            "mdm",
+            "mdm-index-overload"
+          ]
+        },
+        "ret_policy": {
+          "type": "string",
+          "title": "ret_policy",
+          "description": "retain policy tag",
+          "enum": [
+            "agg10y",
+            "noagg6m",
+            "noagg6h",
+            "noagg3m"
+          ]
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{3,20}$",
+          "description": "name of a reference"
+        },
+        "script_value": {
+          "type": "string",
+          "title": "script_value",
+          "description": "value of a script, alternative to `script`"
+        },
+        "dataType": {
+          "type": "string",
+          "title": "dataType",
+          "enum": [
+            "BIT",
+            "BYTE",
+            "WORD",
+            "DWORD",
+            "INT",
+            "DINT",
+            "LINT",
+            "REAL",
+            "LREAL",
+            "CHAR",
+            "STRING",
+            "DATE_TIME",
+            "DATE_TIME_L",
+            "DATE_TIME_UTC",
+            "DATE_TIME_UTC_L"
+          ]
+        },
+        "memoryArea": {
+          "type": "string",
+          "title": "memoryArea",
+          "enum": [
+            "INPUT",
+            "OUTPUT",
+            "MEMORY",
+            "DATA_BLOCK",
+            "COIL",
+            "DISCRETE_INPUT",
+            "HOLDING_REGISTER",
+            "INPUT_REGISTER"
+          ]
+        },
+        "memoryAddress": {
+          "type": "number",
+          "title": "memoryAddress",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "dataBlockAddress": {
+          "type": "number",
+          "title": "dataBlockAddress",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "stringLength": {
+          "type": "number",
+          "title": "stringLength",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "bitOffset": {
+          "type": "number",
+          "title": "bitOffset",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "permissions": {
+          "type": "number",
+          "title": "permissions",
+          "description": "permissions: 0 = read, 1 = write, 2 = read+write",
+          "enum": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "accessLevel": {
+          "type": "number",
+          "title": "accessLevel",
+          "description": "access level: 1, 2, 3",
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "title": "category",
+          "description": "category: `data` or `alarm`",
+          "enum": [
+            "alarm",
+            "data"
+          ]
+        },
+        "min": {
+          "type": "number",
+          "title": "min",
+          "description": "min value"
+        },
+        "max": {
+          "type": "number",
+          "title": "max",
+          "description": "max value"
+        },
+        "unit": {
+          "type": "string",
+          "title": "unit",
+          "description": "unit: from International System of Units (SI)",
+          "enum": [
+            "meter",
+            "kilogram",
+            "second",
+            "ampere",
+            "kelvin",
+            "mole",
+            "candela",
+            "pascal",
+            "joule",
+            "watt",
+            "newton",
+            "coulomb",
+            "volt",
+            "ohm",
+            "farad",
+            "henry",
+            "tesla",
+            "weber",
+            "hertz",
+            "lux",
+            "becquerel",
+            "gray",
+            "sievert",
+            "radian",
+            "steradian",
+            "lumen",
+            "liter",
+            "tonne",
+            "bar",
+            "minute",
+            "hour",
+            "day",
+            "degree Celsius",
+            "degree Fahrenheit",
+            "calorie",
+            "electronvolt",
+            "astronomical unit",
+            "light-year",
+            "parsec",
+            "angstrom",
+            "barn",
+            "bit",
+            "byte",
+            "kilobyte",
+            "megabyte",
+            "gigabyte",
+            "terabyte",
+            "cubic meter",
+            "square meter",
+            "kilometer",
+            "mile",
+            "foot",
+            "inch",
+            "yard",
+            "gallon",
+            "pint",
+            "ounce",
+            "pound",
+            "ton",
+            "nautical mile",
+            "knots",
+            "mach",
+            "dyne",
+            "erg",
+            "poise",
+            "stokes",
+            "atmosphere",
+            "decibel",
+            "siemens",
+            "kelvin per watt",
+            "joule per kelvin",
+            "kilogram per cubic meter",
+            "cubic meter per second",
+            "kilogram per second",
+            "meter per second",
+            "meter per second squared"
+          ]
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "static": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            },
+            "dynamic": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</pre>
+    <div id="device_model_configuration_modbustcp_protocol" class="section">
+        <h2>json schema: Device_Model_Configuration_Modbustcp_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "nota": [
+      "Le proprietà sono le stesse del Device_Configuration_Modbustcp_Protocol eccetto",
+      "che per i modelli del produttore dove non vanno inserite",
+      "`script` (reference al gateway model) e",
+      "`tags.dynamic` (idem)"
+    ]
+  }
+}</pre>
+    <div id="device_connectionconfiguration_modbustcp_protocol" class="section">
+        <h2>json schema: Device_ConnectionConfiguration_Modbustcp_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "connection": {
+    "type": "object",
+    "properties": [
+      {
+        "name": "host",
+        "type": "string",
+        "title": "host"
+      },
+      {
+        "name": "port",
+        "type": "number",
+        "title": "port",
+        "description": " (minimum: 0,maximum: 65535,minimum: 0,maximum: 65535,minimum: 0,maximum: 65535) ",
+        "minimum": 0,
+        "maximum": 65535
+      },
+      {
+        "name": "unitId",
+        "type": "integer",
+        "title": "unitId",
+        "description": " (minimum: 0,maximum: 255) ",
+        "minimum": 0,
+        "maximum": 255
+      }
+    ]
+  }
+}</pre>
+    <div id="device_configuration_modbustcp_protocol" class="section">
+        <h2>json schema: Device_Configuration_Modbustcp_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "title": "name",
+          "description": "metric name"
+        },
+        "interval": {
+          "type": "integer",
+          "title": "interval",
+          "description": "interval in ms (minimum: 10000,maximum: 10000000000) ",
+          "minimum": 10000,
+          "maximum": 10000000000
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "optional description for metric (maxLength: 89) ",
+          "maxLength": 89
+        },
+        "topic": {
+          "type": "string",
+          "title": "topic",
+          "description": "topic to publish to",
+          "enum": [
+            "mdm",
+            "mdm-index-overload"
+          ]
+        },
+        "ret_policy": {
+          "type": "string",
+          "title": "ret_policy",
+          "description": "retain policy tag",
+          "enum": [
+            "agg10y",
+            "noagg6m",
+            "noagg6h",
+            "noagg3m"
+          ]
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{3,20}$",
+          "description": "name of a reference"
+        },
+        "script_value": {
+          "type": "string",
+          "title": "script_value",
+          "description": "value of a script, alternative to `script`"
+        },
+        "dataType": {
+          "type": "string",
+          "title": "dataType",
+          "enum": [
+            "BOOL",
+            "INT16",
+            "UINT16",
+            "INT32",
+            "UINT32",
+            "FLOAT",
+            "DOUBLE"
+          ]
+        },
+        "memoryArea": {
+          "type": "string",
+          "title": "memoryArea",
+          "enum": [
+            "INPUT",
+            "OUTPUT",
+            "MEMORY",
+            "DATA_BLOCK",
+            "COIL",
+            "DISCRETE_INPUT",
+            "HOLDING_REGISTER",
+            "INPUT_REGISTER"
+          ]
+        },
+        "memoryAddress": {
+          "type": "number",
+          "title": "memoryAddress",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "byteOrder": {
+          "type": "string",
+          "title": "byteOrder",
+          "enum": [
+            "BIG_ENDIAN",
+            "LITTLE_ENDIAN"
+          ]
+        },
+        "permissions": {
+          "type": "number",
+          "title": "permissions",
+          "description": "permissions: 0 = read, 1 = write, 2 = read+write",
+          "enum": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "accessLevel": {
+          "type": "number",
+          "title": "accessLevel",
+          "description": "access level: 1, 2, 3",
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "title": "category",
+          "description": "category: `data` or `alarm`",
+          "enum": [
+            "alarm",
+            "data"
+          ]
+        },
+        "min": {
+          "type": "number",
+          "title": "min",
+          "description": "min value"
+        },
+        "max": {
+          "type": "number",
+          "title": "max",
+          "description": "max value"
+        },
+        "unit": {
+          "type": "string",
+          "title": "unit",
+          "description": "unit: from International System of Units (SI)",
+          "enum": [
+            "meter",
+            "kilogram",
+            "second",
+            "ampere",
+            "kelvin",
+            "mole",
+            "candela",
+            "pascal",
+            "joule",
+            "watt",
+            "newton",
+            "coulomb",
+            "volt",
+            "ohm",
+            "farad",
+            "henry",
+            "tesla",
+            "weber",
+            "hertz",
+            "lux",
+            "becquerel",
+            "gray",
+            "sievert",
+            "radian",
+            "steradian",
+            "lumen",
+            "liter",
+            "tonne",
+            "bar",
+            "minute",
+            "hour",
+            "day",
+            "degree Celsius",
+            "degree Fahrenheit",
+            "calorie",
+            "electronvolt",
+            "astronomical unit",
+            "light-year",
+            "parsec",
+            "angstrom",
+            "barn",
+            "bit",
+            "byte",
+            "kilobyte",
+            "megabyte",
+            "gigabyte",
+            "terabyte",
+            "cubic meter",
+            "square meter",
+            "kilometer",
+            "mile",
+            "foot",
+            "inch",
+            "yard",
+            "gallon",
+            "pint",
+            "ounce",
+            "pound",
+            "ton",
+            "nautical mile",
+            "knots",
+            "mach",
+            "dyne",
+            "erg",
+            "poise",
+            "stokes",
+            "atmosphere",
+            "decibel",
+            "siemens",
+            "kelvin per watt",
+            "joule per kelvin",
+            "kilogram per cubic meter",
+            "cubic meter per second",
+            "kilogram per second",
+            "meter per second",
+            "meter per second squared"
+          ]
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "static": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            },
+            "dynamic": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</pre>
+    <div id="device_model_configuration_opcua_protocol" class="section">
+        <h2>json schema: Device_Model_Configuration_Opcua_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "nota": [
+      "Le proprietà sono le stesse del Device_Configuration_Opcua_Protocol eccetto",
+      "che per i modelli del produttore dove non vanno inserite",
+      "`script` (reference al gateway model) e",
+      "`tags.dynamic` (idem)"
+    ]
+  }
+}</pre>
+    <div id="device_connectionconfiguration_opcua_protocol" class="section">
+        <h2>json schema: Device_ConnectionConfiguration_Opcua_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "connection": {
+    "type": "object",
+    "properties": [
+      {
+        "name": "host",
+        "type": "string",
+        "title": "host"
+      },
+      {
+        "name": "port",
+        "type": "number",
+        "title": "port",
+        "description": " (minimum: 0,maximum: 65535,minimum: 0,maximum: 65535,minimum: 0,maximum: 65535) ",
+        "minimum": 0,
+        "maximum": 65535
+      },
+      {
+        "name": "path",
+        "type": "string",
+        "title": "path"
+      }
+    ]
+  }
+}</pre>
+    <div id="device_configuration_opcua_protocol" class="section">
+        <h2>json schema: Device_Configuration_Opcua_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "title": "name",
+          "description": "metric name"
+        },
+        "interval": {
+          "type": "integer",
+          "title": "interval",
+          "description": "interval in ms (minimum: 10000,maximum: 10000000000) ",
+          "minimum": 10000,
+          "maximum": 10000000000
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "optional description for metric (maxLength: 89) ",
+          "maxLength": 89
+        },
+        "topic": {
+          "type": "string",
+          "title": "topic",
+          "description": "topic to publish to",
+          "enum": [
+            "mdm",
+            "mdm-index-overload"
+          ]
+        },
+        "ret_policy": {
+          "type": "string",
+          "title": "ret_policy",
+          "description": "retain policy tag",
+          "enum": [
+            "agg10y",
+            "noagg6m",
+            "noagg6h",
+            "noagg3m"
+          ]
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{3,20}$",
+          "description": "name of a reference"
+        },
+        "script_value": {
+          "type": "string",
+          "title": "script_value",
+          "description": "value of a script, alternative to `script`"
+        },
+        "dataType": {
+          "type": "string",
+          "title": "dataType",
+          "enum": [
+            "BOOL",
+            "SBYTE",
+            "BYTE",
+            "INT16",
+            "UINT16",
+            "INT32",
+            "UINT32",
+            "INT64",
+            "UINT64",
+            "FLOAT",
+            "DOUBLE",
+            "STRING",
+            "DATETIME"
+          ]
+        },
+        "namespaceIndex": {
+          "type": "integer",
+          "title": "namespaceIndex",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "identifierType": {
+          "type": "string",
+          "title": "identifierType",
+          "enum": [
+            "s",
+            "i",
+            "g",
+            "b"
+          ]
+        },
+        "identifier": {
+          "type": "string",
+          "title": "identifier"
+        },
+        "permissions": {
+          "type": "number",
+          "title": "permissions",
+          "description": "permissions: 0 = read, 1 = write, 2 = read+write",
+          "enum": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "accessLevel": {
+          "type": "number",
+          "title": "accessLevel",
+          "description": "access level: 1, 2, 3",
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "title": "category",
+          "description": "category: `data` or `alarm`",
+          "enum": [
+            "alarm",
+            "data"
+          ]
+        },
+        "min": {
+          "type": "number",
+          "title": "min",
+          "description": "min value"
+        },
+        "max": {
+          "type": "number",
+          "title": "max",
+          "description": "max value"
+        },
+        "unit": {
+          "type": "string",
+          "title": "unit",
+          "description": "unit: from International System of Units (SI)",
+          "enum": [
+            "meter",
+            "kilogram",
+            "second",
+            "ampere",
+            "kelvin",
+            "mole",
+            "candela",
+            "pascal",
+            "joule",
+            "watt",
+            "newton",
+            "coulomb",
+            "volt",
+            "ohm",
+            "farad",
+            "henry",
+            "tesla",
+            "weber",
+            "hertz",
+            "lux",
+            "becquerel",
+            "gray",
+            "sievert",
+            "radian",
+            "steradian",
+            "lumen",
+            "liter",
+            "tonne",
+            "bar",
+            "minute",
+            "hour",
+            "day",
+            "degree Celsius",
+            "degree Fahrenheit",
+            "calorie",
+            "electronvolt",
+            "astronomical unit",
+            "light-year",
+            "parsec",
+            "angstrom",
+            "barn",
+            "bit",
+            "byte",
+            "kilobyte",
+            "megabyte",
+            "gigabyte",
+            "terabyte",
+            "cubic meter",
+            "square meter",
+            "kilometer",
+            "mile",
+            "foot",
+            "inch",
+            "yard",
+            "gallon",
+            "pint",
+            "ounce",
+            "pound",
+            "ton",
+            "nautical mile",
+            "knots",
+            "mach",
+            "dyne",
+            "erg",
+            "poise",
+            "stokes",
+            "atmosphere",
+            "decibel",
+            "siemens",
+            "kelvin per watt",
+            "joule per kelvin",
+            "kilogram per cubic meter",
+            "cubic meter per second",
+            "kilogram per second",
+            "meter per second",
+            "meter per second squared"
+          ]
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "static": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            },
+            "dynamic": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</pre>
+    <div id="device_model_configuration_modbusrtu_protocol" class="section">
+        <h2>json schema: Device_Model_Configuration_Modbusrtu_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "nota": [
+      "Le proprietà sono le stesse del Device_Configuration_Modbusrtu_Protocol eccetto",
+      "che per i modelli del produttore dove non vanno inserite",
+      "`script` (reference al gateway model) e",
+      "`tags.dynamic` (idem)"
+    ]
+  }
+}</pre>
+    <div id="device_connectionconfiguration_modbusrtu_protocol" class="section">
+        <h2>json schema: Device_ConnectionConfiguration_Modbusrtu_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "connection": {
+    "type": "object",
+    "properties": [
+      {
+        "name": "serialPort",
+        "type": "string",
+        "title": "serialPort"
+      },
+      {
+        "name": "baudRate",
+        "type": "number",
+        "title": "baudRate"
+      },
+      {
+        "name": "parity",
+        "type": "string",
+        "title": "parity",
+        "enum": [
+          "none",
+          "even",
+          "odd",
+          "space",
+          "mark"
+        ]
+      },
+      {
+        "name": "dataBits",
+        "type": "number",
+        "title": "dataBits",
+        "enum": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      },
+      {
+        "name": "stopBits",
+        "type": "number",
+        "title": "stopBits",
+        "enum": [
+          "1",
+          "2",
+          "1.5"
+        ]
+      }
+    ]
+  }
+}</pre>
+    <div id="device_configuration_modbusrtu_protocol" class="section">
+        <h2>json schema: Device_Configuration_Modbusrtu_Protocol</h2>
+        <div>
+            <a href="#toc"><button>&#8593;</button>
+            </a>
+        </div>
+    </div>
+    <h3>Properties:</h3>
+    <pre>
+        
+{
+  "metrics": {
+    "type": "array",
+    "minItems": 1,
+    "items": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_.-]{3,32}$",
+          "title": "name",
+          "description": "metric name"
+        },
+        "interval": {
+          "type": "integer",
+          "title": "interval",
+          "description": "interval in ms (minimum: 10000,maximum: 10000000000) ",
+          "minimum": 10000,
+          "maximum": 10000000000
+        },
+        "description": {
+          "type": "string",
+          "title": "description",
+          "description": "optional description for metric (maxLength: 89) ",
+          "maxLength": 89
+        },
+        "topic": {
+          "type": "string",
+          "title": "topic",
+          "description": "topic to publish to",
+          "enum": [
+            "mdm",
+            "mdm-index-overload"
+          ]
+        },
+        "ret_policy": {
+          "type": "string",
+          "title": "ret_policy",
+          "description": "retain policy tag",
+          "enum": [
+            "agg10y",
+            "noagg6m",
+            "noagg6h",
+            "noagg3m"
+          ]
+        },
+        "script": {
+          "type": "string",
+          "pattern": "^[a-zA-Z0-9_-]{3,20}$",
+          "description": "name of a reference"
+        },
+        "script_value": {
+          "type": "string",
+          "title": "script_value",
+          "description": "value of a script, alternative to `script`"
+        },
+        "dataType": {
+          "type": "string",
+          "title": "dataType",
+          "enum": [
+            "BOOL",
+            "INT16",
+            "UINT16",
+            "INT32",
+            "UINT32",
+            "FLOAT",
+            "DOUBLE"
+          ]
+        },
+        "memoryArea": {
+          "type": "string",
+          "title": "memoryArea",
+          "enum": [
+            "INPUT",
+            "OUTPUT",
+            "MEMORY",
+            "DATA_BLOCK",
+            "COIL",
+            "DISCRETE_INPUT",
+            "HOLDING_REGISTER",
+            "INPUT_REGISTER"
+          ]
+        },
+        "memoryAddress": {
+          "type": "number",
+          "title": "memoryAddress",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "byteOrder": {
+          "type": "string",
+          "title": "byteOrder",
+          "enum": [
+            "BIG_ENDIAN",
+            "LITTLE_ENDIAN"
+          ]
+        },
+        "slaveAddress": {
+          "type": "integer",
+          "title": "slaveAddress",
+          "description": " (minimum: 0) ",
+          "minimum": 0
+        },
+        "permissions": {
+          "type": "number",
+          "title": "permissions",
+          "description": "permissions: 0 = read, 1 = write, 2 = read+write",
+          "enum": [
+            "0",
+            "1",
+            "2"
+          ]
+        },
+        "accessLevel": {
+          "type": "number",
+          "title": "accessLevel",
+          "description": "access level: 1, 2, 3",
+          "enum": [
+            "1",
+            "2",
+            "3"
+          ]
+        },
+        "category": {
+          "type": "string",
+          "title": "category",
+          "description": "category: `data` or `alarm`",
+          "enum": [
+            "alarm",
+            "data"
+          ]
+        },
+        "min": {
+          "type": "number",
+          "title": "min",
+          "description": "min value"
+        },
+        "max": {
+          "type": "number",
+          "title": "max",
+          "description": "max value"
+        },
+        "unit": {
+          "type": "string",
+          "title": "unit",
+          "description": "unit: from International System of Units (SI)",
+          "enum": [
+            "meter",
+            "kilogram",
+            "second",
+            "ampere",
+            "kelvin",
+            "mole",
+            "candela",
+            "pascal",
+            "joule",
+            "watt",
+            "newton",
+            "coulomb",
+            "volt",
+            "ohm",
+            "farad",
+            "henry",
+            "tesla",
+            "weber",
+            "hertz",
+            "lux",
+            "becquerel",
+            "gray",
+            "sievert",
+            "radian",
+            "steradian",
+            "lumen",
+            "liter",
+            "tonne",
+            "bar",
+            "minute",
+            "hour",
+            "day",
+            "degree Celsius",
+            "degree Fahrenheit",
+            "calorie",
+            "electronvolt",
+            "astronomical unit",
+            "light-year",
+            "parsec",
+            "angstrom",
+            "barn",
+            "bit",
+            "byte",
+            "kilobyte",
+            "megabyte",
+            "gigabyte",
+            "terabyte",
+            "cubic meter",
+            "square meter",
+            "kilometer",
+            "mile",
+            "foot",
+            "inch",
+            "yard",
+            "gallon",
+            "pint",
+            "ounce",
+            "pound",
+            "ton",
+            "nautical mile",
+            "knots",
+            "mach",
+            "dyne",
+            "erg",
+            "poise",
+            "stokes",
+            "atmosphere",
+            "decibel",
+            "siemens",
+            "kelvin per watt",
+            "joule per kelvin",
+            "kilogram per cubic meter",
+            "cubic meter per second",
+            "kilogram per second",
+            "meter per second",
+            "meter per second squared"
+          ]
+        },
+        "tags": {
+          "type": "object",
+          "properties": {
+            "static": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            },
+            "dynamic": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "properties": {
+                  "key": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_-]{3,10}$"
+                  },
+                  "value": {
+                    "type": "string",
+                    "required": true,
+                    "pattern": "^[a-zA-Z0-9_.-]{1,10}$"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}</pre>
+</div>
+
+</html>
